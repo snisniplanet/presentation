@@ -1,6 +1,6 @@
 <template>
   <div class="hidden">
-    <vs-navbar v-model="active" shadow square center-collapsed>
+    <vs-navbar v-model="active" shadow square center-collapsed fixed>
       <template #left>
         <vs-button flat icon @click="activeSidebar = !activeSidebar">
           <i class="bx bx-menu"></i>
@@ -23,9 +23,9 @@
         <vs-button>Get Started</vs-button>
       </template>
     </vs-navbar>
-    <vs-sidebar v-model="active" :open.sync="activeSidebar" absolute>
+    <vs-sidebar v-model="active" :open.sync="activeSidebar" fixed>
       <template #logo>
-        <!-- ...img logo -->
+        <span class="title is-1">SNI</span>
       </template>
       <vs-sidebar-item id="home">
         <template #icon>
