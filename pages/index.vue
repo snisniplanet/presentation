@@ -1,25 +1,41 @@
 <template>
   <div>
-    <div class="hero is-large is-info">
-      <div class="hero-body container">
+    <div class="hero is-large is-primary">
+      <div class="hero-body container has-text-centered">
         <h1 class="title is-1 is-uppercase">snisni</h1>
+        <p class="subtitle is-5">
+          Projects made with <i class="bx bxs-heart"></i>
+        </p>
       </div>
     </div>
 
-    <div>
-      <div class="container section">
-        <ProjectThumbnail />
+    <div class="hero">
+      <div class="hero-body container section">
+        <div class="columns is-vcentered is-2">
+          <div class="column is-one-quarter">
+            <ThePush />
+          </div>
+
+          <div class="column">
+            <h3 class="title is-3">Articles from open source developers.</h3>
+
+            <p>
+              <strong>The Push</strong> is an independent blog that focuses on
+              the many quirks of working as an open source developer.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import ProjectThumbnail from '@/components/ProjectThumbnail'
+import ThePush from '@/components/prefabs/cards/ThePush'
 
 export default {
   components: {
-    ProjectThumbnail,
+    ThePush,
   },
 }
 </script>
