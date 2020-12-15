@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="is-unselectable">
     <div class="box">
       <div :style="boxStyling" class="image"></div>
 
