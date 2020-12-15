@@ -6,17 +6,13 @@
           <i class="bx bx-menu"></i>
         </vs-button>
       </template>
-      <vs-navbar-item id="guide" :active="active == 'guide'">
-        Guide
-      </vs-navbar-item>
-      <vs-navbar-item id="docs" :active="active == 'docs'">
-        Documents
-      </vs-navbar-item>
-      <vs-navbar-item id="components" :active="active == 'components'">
-        Components
-      </vs-navbar-item>
-      <vs-navbar-item id="license" :active="active == 'license'">
-        license
+      <vs-navbar-item
+        v-for="item in navigation.top"
+        :id="item.id"
+        :key="item.id"
+        :active="active == item.route"
+      >
+        <nuxt-link :to="item.route">{{ item.title }}</nuxt-link>
       </vs-navbar-item>
       <template #right>
         <vs-button flat>Login</vs-button>
@@ -158,10 +154,13 @@
   </div>
 </template>
 <script>
+import navigation from '@/config/navigation.json'
+
 export default {
   data: () => ({
     active: 'home',
     activeSidebar: false,
+    navigation,
   }),
 }
 </script>
