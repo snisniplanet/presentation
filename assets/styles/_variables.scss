@@ -1,4 +1,29 @@
+// RGB Colors
+$identity-colors: (
+    "primary": (255, 102, 0),
+    "success": (23, 201, 100),
+    "danger": (242, 19, 93),
+    "warn": (254, 130, 0),
+    "dark": (36, 33, 69),
+);
+
 $primary: rgb(255, 102, 0);
+$success: rgb(23, 201, 100);
+$warn: rgb(254, 130, 0);
+$danger: rgb(242, 19, 93);
+$dark: rgb(36, 33, 69);
 $info: rgb(0, 81, 255);
 
 $family-primary: "Space Mono";
+$radius: 4px;
+
+$radius-small: $radius / 2;
+$radius-large: $radius * 4;
+$radius-rounded: 290486px;
+
+
+:root {
+    @each $name, $value in $identity-colors {
+        --vs-#{ $name }: #{ $value };
+    }
+}

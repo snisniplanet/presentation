@@ -1,37 +1,38 @@
 <template>
-  <div class="hidden">
-    <vs-navbar v-model="active" shadow square center-collapsed>
+  <div class="hidden pt-6 mt-1">
+    <vs-navbar v-model="active" shadow padding-scroll center-collapsed fixed>
       <template #left>
         <vs-button flat icon @click="activeSidebar = !activeSidebar">
           <i class="bx bx-menu"></i>
         </vs-button>
       </template>
-      <vs-navbar-item id="guide" :active="active == 'guide'">
-        Guide
-      </vs-navbar-item>
-      <vs-navbar-item id="docs" :active="active == 'docs'">
-        Documents
-      </vs-navbar-item>
-      <vs-navbar-item id="components" :active="active == 'components'">
-        Components
-      </vs-navbar-item>
-      <vs-navbar-item id="license" :active="active == 'license'">
-        license
+      <vs-navbar-item
+        v-for="item in navigation.top"
+        :id="item.id"
+        :key="item.id"
+        :active="active == item.route"
+      >
+        <i v-if="item.icon" :class="item.icon"></i>
+        <nuxt-link :to="item.route">{{ item.title }}</nuxt-link>
       </vs-navbar-item>
       <template #right>
         <vs-button flat>Login</vs-button>
         <vs-button>Get Started</vs-button>
       </template>
     </vs-navbar>
-    <vs-sidebar v-model="active" :open.sync="activeSidebar" absolute>
+    <vs-sidebar v-model="active" :open.sync="activeSidebar" fixed>
       <template #logo>
-        <!-- ...img logo -->
+        <span class="title is-1 is-unselectable">SNI</span>
       </template>
-      <vs-sidebar-item id="home">
-        <template #icon>
-          <i class="bx bx-home"></i>
+      <vs-sidebar-item
+        v-for="item in navigation.side"
+        :id="item.id"
+        :key="item.id"
+      >
+        <template v-if="item.icon" #icon>
+          <i :class="item.icon"></i>
         </template>
-        Home
+        <nuxt-link :to="item.route">{{ item.title }}</nuxt-link>
       </vs-sidebar-item>
       <vs-sidebar-item id="market">
         <template #icon>
@@ -158,10 +159,13 @@
   </div>
 </template>
 <script>
+import navigation from '@/config/navigation.json'
+
 export default {
   data: () => ({
     active: 'home',
     activeSidebar: false,
+    navigation,
   }),
 }
 </script>

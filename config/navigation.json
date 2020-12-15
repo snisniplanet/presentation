@@ -1,0 +1,42 @@
+{
+    "top": [
+        {
+            "title": "Docs",
+            "route": "docs",
+            "id": "docs",
+            "icon": "bx bx-book-alt"
+        },
+        {
+            "title": "Projects",
+            "route": "projects",
+            "id": "projects",
+            "icon": "bx bx-code-block"
+        },
+        {
+            "title": "Tips",
+            "route": "tips",
+            "id": "tips",
+            "icon": "bx bx-bulb"
+        }
+    ],
+    "side": [
+        {
+            "title": "Home",
+            "route": "/",
+            "id": "home",
+            "icon": "bx bx-home"
+        },
+        {
+            "title": "Projects",
+            "route": "projects",
+            "id": "projects",
+            "icon": "bx bx-code-block"
+        },
+        {
+            "title": "Tips",
+            "route": "tips",
+            "id": "tips",
+            "icon": "bx bx-bulb"
+        }
+    ]
+}

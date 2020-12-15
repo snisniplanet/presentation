@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="is-unselectable">
     <div class="box">
       <div :style="boxStyling" class="image"></div>
-    </div>
 
-    <div class="overlay">
-      <slot></slot>
+      <div class="overlay">
+        <slot></slot>
+      </div>
     </div>
   </div>
 </template>
@@ -18,16 +18,20 @@
 }
 
 .image {
-  position: absolute;
-  inset: 0;
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.box,
+.overlay,
 .image {
+  position: absolute;
+  inset: 0;
+}
+
+.box,
+.image,
+.overlay {
   border-radius: 10px;
 }
 </style>

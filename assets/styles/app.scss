@@ -2,3 +2,17 @@
 @import "variables";
 
 @import "bulma";
+
+strong {
+    color: inherit;
+}
+
+a[href]{
+    color: inherit;
+}
+
+.content {
+    a[href] {
+        color: $link;
+    }
+}
