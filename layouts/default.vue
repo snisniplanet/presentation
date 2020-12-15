@@ -1,6 +1,6 @@
 <template>
   <div class="hidden">
-    <vs-navbar v-model="active" shadow square center-collapsed fixed>
+    <vs-navbar v-model="active" shadow padding-scroll center-collapsed fixed>
       <template #left>
         <vs-button flat icon @click="activeSidebar = !activeSidebar">
           <i class="bx bx-menu"></i>
