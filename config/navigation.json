@@ -3,7 +3,40 @@
         {
             "title": "Docs",
             "route": "docs",
-            "id": "docs"
+            "id": "docs",
+            "icon": "bx bx-book-alt"
+        },
+        {
+            "title": "Projects",
+            "route": "projects",
+            "id": "projects",
+            "icon": "bx bx-code-block"
+        },
+        {
+            "title": "Tips",
+            "route": "tips",
+            "id": "tips",
+            "icon": "bx bx-bulb"
+        }
+    ],
+    "side": [
+        {
+            "title": "Docs",
+            "route": "docs",
+            "id": "docs",
+            "icon": "bx bx-book-alt"
+        },
+        {
+            "title": "Projects",
+            "route": "projects",
+            "id": "projects",
+            "icon": "bx bx-code-block"
+        },
+        {
+            "title": "Tips",
+            "route": "tips",
+            "id": "tips",
+            "icon": "bx bx-bulb"
         }
     ]
 }

@@ -12,6 +12,7 @@
         :key="item.id"
         :active="active == item.route"
       >
+        <i v-if="item.icon" :class="item.icon"></i>
         <nuxt-link :to="item.route">{{ item.title }}</nuxt-link>
       </vs-navbar-item>
       <template #right>
@@ -21,13 +22,17 @@
     </vs-navbar>
     <vs-sidebar v-model="active" :open.sync="activeSidebar" fixed>
       <template #logo>
-        <span class="title is-1">SNI</span>
+        <span class="title is-1 is-unselectable">SNI</span>
       </template>
-      <vs-sidebar-item id="home">
-        <template #icon>
-          <i class="bx bx-home"></i>
+      <vs-sidebar-item
+        v-for="item in navigation.side"
+        :id="item.id"
+        :key="item.id"
+      >
+        <template v-if="item.icon" #icon>
+          <i :class="item.icon"></i>
         </template>
-        Home
+        <nuxt-link :to="item.route">{{ item.title }}</nuxt-link>
       </vs-sidebar-item>
       <vs-sidebar-item id="market">
         <template #icon>
