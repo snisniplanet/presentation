@@ -15,6 +15,12 @@ $dark: rgb(36, 33, 69);
 $info: rgb(0, 81, 255);
 
 $family-primary: "Space Mono";
+$radius: 4px;
+
+$radius-small: $radius / 2;
+$radius-large: $radius * 4;
+$radius-rounded: 290486px;
+
 
 :root {
     @each $name, $value in $identity-colors {
