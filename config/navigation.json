@@ -21,10 +21,10 @@
     ],
     "side": [
         {
-            "title": "Docs",
-            "route": "docs",
-            "id": "docs",
-            "icon": "bx bx-book-alt"
+            "title": "Home",
+            "route": "/",
+            "id": "home",
+            "icon": "bx bx-home"
         },
         {
             "title": "Projects",
