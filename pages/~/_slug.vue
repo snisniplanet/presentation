@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <div class="section container">
+    <div class="section container content">
       <nuxt-content :document="doc" />
     </div>
   </div>
