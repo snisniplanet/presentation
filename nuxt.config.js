@@ -42,7 +42,14 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://www.npmjs.com/package/@nuxtjs/style-resources
+    '@nuxtjs/style-resources',
   ],
+
+  // Style resources module, used as explained here: https://dev.to/ceppeu/using-sass-global-variables-in-nuxt-js-j0k
+  styleResources: {
+    scss: ['./assets/styles/_variables.scss']
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
