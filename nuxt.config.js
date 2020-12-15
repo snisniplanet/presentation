@@ -48,7 +48,7 @@ export default {
 
   // Style resources module, used as explained here: https://dev.to/ceppeu/using-sass-global-variables-in-nuxt-js-j0k
   styleResources: {
-    scss: ['./assets/styles/_variables.scss']
+    scss: ['./assets/styles/_variables.scss'],
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
