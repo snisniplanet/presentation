@@ -1,0 +1,9 @@
+{
+    "top": [
+        {
+            "title": "Docs",
+            "route": "docs",
+            "id": "docs"
+        }
+    ]
+}
