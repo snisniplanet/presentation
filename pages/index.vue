@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="hero is-large is-primary">
+    <div class="hero is-medium banner is-primary">
       <div class="hero-body container has-text-centered">
         <h1 class="title is-1 is-uppercase">snisni</h1>
         <p class="subtitle is-5">
@@ -39,3 +39,9 @@ export default {
   },
 }
 </script>
+
+<style scoped lang="scss">
+.banner {
+  border-radius: 0 0 $radius-large $radius-large;
+}
+</style>
