@@ -1,5 +1,5 @@
 <template>
-  <div class="hidden">
+  <div class="hidden pt-6 mt-1">
     <vs-navbar v-model="active" shadow padding-scroll center-collapsed fixed>
       <template #left>
         <vs-button flat icon @click="activeSidebar = !activeSidebar">
