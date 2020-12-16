@@ -12,7 +12,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/png', href: '/logo.png' }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -57,6 +57,16 @@ export default {
     families: {
       'Space+Mono': true,
     },
+  },
+
+  // PWA Module documentation: https://pwa.nuxtjs.org/
+  pwa: {
+    icon: {
+      source: "/logo.png",
+    },
+    manifest: {
+      name: 'SNISNI',
+    }
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
