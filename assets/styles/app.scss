@@ -12,6 +12,7 @@ a[href]{
 }
 
 .content {
+    font-family: $family-secondary;
     a[href] {
         color: $link;
     }

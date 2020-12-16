@@ -56,6 +56,7 @@ export default {
   googleFonts: {
     families: {
       'Space+Mono': true,
+      'Roboto': true,
     },
   },
 
