@@ -16,8 +16,12 @@
         <nuxt-link :to="item.route">{{ item.title }}</nuxt-link>
       </vs-navbar-item>
       <template #right>
-        <vs-button flat>Login</vs-button>
-        <vs-button>Get Started</vs-button>
+        <vs-button transparent icon>
+          <i class="bx bx-home-alt"></i>
+        </vs-button>
+        <vs-button gradient>
+          <span>Contact Us</span>
+        </vs-button>
       </template>
     </vs-navbar>
     <vs-sidebar v-model="active" :open.sync="activeSidebar" fixed>
