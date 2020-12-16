@@ -12,7 +12,20 @@ a[href]{
 }
 
 .content {
+    font-family: $family-secondary;
     a[href] {
         color: $link;
+    }
+}
+
+.nuxt-content {
+    h2>a, h3>a {
+        &>span {
+            width: 10px;
+        }
+
+        &::before {
+            content: "#"
+        }
     }
 }

@@ -16,8 +16,16 @@
         <nuxt-link :to="item.route">{{ item.title }}</nuxt-link>
       </vs-navbar-item>
       <template #right>
-        <vs-button flat>Login</vs-button>
-        <vs-button>Get Started</vs-button>
+        <vs-button transparent icon>
+          <i class="bx bx-home-alt"></i>
+        </vs-button>
+        <vs-button gradient>
+          <span>Contact Us</span>
+
+          <template #animate>
+            <i class="bx bx-envelope"></i>
+          </template>
+        </vs-button>
       </template>
     </vs-navbar>
     <vs-sidebar v-model="active" :open.sync="activeSidebar" fixed>
@@ -142,14 +150,14 @@
       </vs-sidebar-item>
       <template #footer>
         <vs-row justify="space-between">
-          <vs-avatar badge-color="danger" badge-position="top-right">
-            <i class="bx bx-bell"></i>
+          <vs-avatar badge-color="primary" badge-position="top-right">
+            <i class="bx bxl-github"></i>
 
-            <template #badge> 28 </template>
+            <template #badge> New </template>
           </vs-avatar>
 
           <vs-avatar>
-            <img src="/avatars/avatar-5.png" alt="" />
+            <img src="/icon.png" alt="Nuxt Logo" />
           </vs-avatar>
         </vs-row>
       </template>
