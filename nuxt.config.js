@@ -45,7 +45,7 @@ export default {
     // https://www.npmjs.com/package/@nuxtjs/style-resources
     '@nuxtjs/style-resources',
     // https://google-fonts.nuxtjs.org/
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
   ],
 
   // Style resources module, used as explained here: https://dev.to/ceppeu/using-sass-global-variables-in-nuxt-js-j0k
@@ -56,18 +56,18 @@ export default {
   googleFonts: {
     families: {
       'Space+Mono': true,
-      'Roboto': true,
+      Roboto: true,
     },
   },
 
   // PWA Module documentation: https://pwa.nuxtjs.org/
   pwa: {
     icon: {
-      source: "/logo.png",
+      source: '/logo.png',
     },
     manifest: {
       name: 'SNISNI',
-    }
+    },
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
