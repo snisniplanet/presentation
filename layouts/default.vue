@@ -21,6 +21,10 @@
         </vs-button>
         <vs-button gradient>
           <span>Contact Us</span>
+
+          <template #animate>
+            <i class="bx bx-envelope"></i>
+          </template>
         </vs-button>
       </template>
     </vs-navbar>
