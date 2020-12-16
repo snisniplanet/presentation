@@ -146,14 +146,14 @@
       </vs-sidebar-item>
       <template #footer>
         <vs-row justify="space-between">
-          <vs-avatar badge-color="danger" badge-position="top-right">
-            <i class="bx bx-bell"></i>
+          <vs-avatar badge-color="primary" badge-position="top-right">
+            <i class="bx bxl-github"></i>
 
-            <template #badge> 28 </template>
+            <template #badge> New </template>
           </vs-avatar>
 
           <vs-avatar>
-            <img src="/avatars/avatar-5.png" alt="" />
+            <img src="/icon.png" alt="Nuxt Logo" />
           </vs-avatar>
         </vs-row>
       </template>
