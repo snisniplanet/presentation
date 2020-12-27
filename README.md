@@ -1,4 +1,6 @@
-# presentation
+# SNISNI ✨
+
+This is the presentation website to show off our capabilities and design skills. (Hope you like them)
 
 ## Build Setup
 
