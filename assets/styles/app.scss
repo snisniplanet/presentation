@@ -1,5 +1,6 @@
 @import "fonts";
 @import "variables";
+@import "mixins";
 
 @import "bulma";
 
@@ -28,4 +29,8 @@ a[href]{
             content: "#"
         }
     }
+}
+
+.is-square {
+    @include aspect-ratio(1, 1);
 }
