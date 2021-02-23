@@ -1,6 +1,6 @@
 <template>
-  <div class="hidden pt-6 mt-1">
-    <vs-navbar v-model="active" shadow padding-scroll center-collapsed fixed>
+  <div class="hidden pt-5 mt-1">
+    <vs-navbar v-model="active" shadow center-collapsed fixed>
       <template #left>
         <vs-button flat icon @click="activeSidebar = !activeSidebar">
           <i class="bx bx-menu"></i>
@@ -11,14 +11,12 @@
         :id="item.id"
         :key="item.id"
         :active="active == item.route"
+        :to="item.route"
       >
         <i v-if="item.icon" :class="item.icon"></i>
-        <nuxt-link :to="item.route">{{ item.title }}</nuxt-link>
+        <span>{{ item.title }}</span>
       </vs-navbar-item>
       <template #right>
-        <vs-button transparent icon>
-          <i class="bx bx-home-alt"></i>
-        </vs-button>
         <vs-button gradient>
           <span>Contact Us</span>
 
@@ -30,17 +28,19 @@
     </vs-navbar>
     <vs-sidebar v-model="active" :open.sync="activeSidebar" fixed>
       <template #logo>
-        <span class="title is-1 is-unselectable">SNI</span>
+        <nuxt-link to="/" class="title is-1 is-unselectable">SNI</nuxt-link>
       </template>
       <vs-sidebar-item
         v-for="item in navigation.side"
         :id="item.id"
         :key="item.id"
+        :to="item.route"
       >
         <template v-if="item.icon" #icon>
           <i :class="item.icon"></i>
         </template>
-        <nuxt-link :to="item.route">{{ item.title }}</nuxt-link>
+
+        <span>{{ item.title }}</span>
       </vs-sidebar-item>
       <vs-sidebar-item id="market">
         <template #icon>
