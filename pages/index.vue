@@ -9,6 +9,56 @@
       </div>
     </div>
 
+    <div class="container section">
+      <div class="columns is-vcentered">
+        <div class="column">
+          <div class="box is-square">
+            <div class="content is-centered">
+              <p>BIG</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <div class="notification is-rounded is-square is-success">
+                <div class="content is-centered">
+                  <p>1</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="notification is-rounded is-square is-warning">
+                <div class="content is-centered">
+                  <p>2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-vcentered">
+            <div class="column">
+              <div class="notification is-rounded is-square is-dark">
+                <div class="content is-centered">
+                  <p>3</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="notification is-rounded is-square is-info">
+                <div class="content is-centered">
+                  <p>4</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="hero">
       <div class="hero-body container section">
         <div class="columns is-vcentered is-2">
