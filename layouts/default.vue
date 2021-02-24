@@ -1,23 +1,8 @@
 <template>
   <div class="hidden pt-5 mt-1">
-    <vs-navbar v-model="active" shadow center-collapsed fixed>
-      <template #left>
-        <vs-button flat icon @click="activeSidebar = !activeSidebar">
-          <i class="bx bx-menu"></i>
-        </vs-button>
-      </template>
-      <vs-navbar-item
-        v-for="item in navigation.top"
-        :id="item.id"
-        :key="item.id"
-        :active="active == item.route"
-        :to="item.route"
-      >
-        <i v-if="item.icon" :class="item.icon"></i>
-        <span>{{ item.title }}</span>
-      </vs-navbar-item>
+    <vs-navbar v-model="active" shadow-scroll center-collapsed fixed>
       <template #right>
-        <vs-button gradient>
+        <vs-button dark>
           <span>Contact Us</span>
 
           <template #animate>
@@ -26,10 +11,8 @@
         </vs-button>
       </template>
     </vs-navbar>
-    <vs-sidebar v-model="active" :open.sync="activeSidebar" fixed>
-      <template #logo>
-        <nuxt-link to="/" class="title is-1 is-unselectable">SNI</nuxt-link>
-      </template>
+
+    <vs-sidebar v-model="active" reduce hover-expand fixed open>
       <vs-sidebar-item
         v-for="item in navigation.side"
         :id="item.id"
@@ -154,10 +137,6 @@
             <i class="bx bxl-github"></i>
 
             <template #badge> New </template>
-          </vs-avatar>
-
-          <vs-avatar>
-            <img src="/icon.png" alt="Nuxt Logo" />
           </vs-avatar>
         </vs-row>
       </template>
