@@ -38,3 +38,8 @@ a[href]{
 .is-square {
     @include aspect-ratio(1, 1);
 }
+
+.is-glass {
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(15px);
+}
