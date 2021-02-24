@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="hero is-medium banner is-primary">
+    <div class="hero is-small banner is-dark">
       <div class="hero-body container has-text-centered">
         <h1 class="title is-1 is-uppercase">snisni</h1>
         <p class="subtitle is-5">
