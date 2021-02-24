@@ -6,86 +6,88 @@
       </div>
     </div>
 
-    <div class="container section">
-      <div class="columns is-vcentered">
-        <div class="column">
-          <div class="box is-square">
-            <div class="content is-centered">
-              <p class="title is-2">
-                Projects made with <i class="bx bxs-heart"></i>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="columns is-vcentered">
-            <div class="column">
-              <div class="notification is-rounded is-square is-success">
-                <div class="content is-centered">
-                  <i class="bx bxl-vuejs bx-lg subtitle is-1"></i>
-                </div>
-              </div>
-            </div>
-
-            <div class="column">
-              <div class="notification is-rounded is-square is-danger">
-                <div class="content is-centered">
-                  <i class="bx bxl-angular bx-lg subtitle is-1"></i>
-                </div>
+    <div class="section">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column">
+            <div class="box is-square">
+              <div class="content is-centered">
+                <p class="title is-2">
+                  Projects made with <i class="bx bxs-heart"></i>
+                </p>
               </div>
             </div>
           </div>
 
-          <div class="columns is-vcentered">
-            <div class="column">
-              <div class="notification is-rounded is-square is-dark">
-                <div class="content is-centered">
-                  <i class="bx bxl-sass bx-lg subtitle is-1"></i>
+          <div class="column">
+            <div class="columns is-vcentered">
+              <div class="column">
+                <div class="notification is-rounded is-square is-success">
+                  <div class="content is-centered">
+                    <i class="bx bxl-vuejs bx-lg subtitle is-1"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="notification is-rounded is-square is-danger">
+                  <div class="content is-centered">
+                    <i class="bx bxl-angular bx-lg subtitle is-1"></i>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="column">
-              <div class="notification is-rounded is-square is-info">
-                <div class="content is-centered">
-                  <i class="bx bxl-react bx-lg subtitle is-1"></i>
+            <div class="columns is-vcentered">
+              <div class="column">
+                <div class="notification is-rounded is-square is-dark">
+                  <div class="content is-centered">
+                    <i class="bx bxl-sass bx-lg subtitle is-1"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="notification is-rounded is-square is-info">
+                  <div class="content is-centered">
+                    <i class="bx bxl-react bx-lg subtitle is-1"></i>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="columns is-vcentered">
-        <div class="column">
-          <div class="notification is-rounded is-square is-warning">
-            <div class="content is-centered">
-              <i class="bx bxl-javascript bx-lg subtitle is-1"></i>
+        <div class="columns is-vcentered">
+          <div class="column">
+            <div class="notification is-rounded is-square is-warning">
+              <div class="content is-centered">
+                <i class="bx bxl-javascript bx-lg subtitle is-1"></i>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="column">
-          <div class="notification is-rounded is-square is-link">
-            <div class="content is-centered">
-              <i class="bx bxl-python bx-lg subtitle is-1"></i>
+          <div class="column">
+            <div class="notification is-rounded is-square is-link">
+              <div class="content is-centered">
+                <i class="bx bxl-python bx-lg subtitle is-1"></i>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="column">
-          <div class="notification is-rounded is-square is-dark">
-            <div class="content is-centered">
-              <i class="bx bxl-dev-to bx-lg subtitle is-1"></i>
+          <div class="column">
+            <div class="notification is-rounded is-square is-dark">
+              <div class="content is-centered">
+                <i class="bx bxl-dev-to bx-lg subtitle is-1"></i>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="column">
-          <div class="notification is-rounded is-square is-dark">
-            <div class="content is-centered">
-              <i class="bx bxl-github bx-lg subtitle is-1"></i>
+          <div class="column">
+            <div class="notification is-rounded is-square is-dark">
+              <div class="content is-centered">
+                <i class="bx bxl-github bx-lg subtitle is-1"></i>
+              </div>
             </div>
           </div>
         </div>
