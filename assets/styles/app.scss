@@ -31,6 +31,10 @@ a[href]{
     }
 }
 
+.is-rounded {
+    border-radius: $radius-large;
+}
+
 .is-square {
     @include aspect-ratio(1, 1);
 }
