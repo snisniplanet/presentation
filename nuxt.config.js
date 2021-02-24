@@ -12,7 +12,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/png', href: '/logo.png' }],
+    link: [{ rel: 'icon', type: 'image/jpg', href: '/icon.jpg' }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -63,7 +63,7 @@ export default {
   // PWA Module documentation: https://pwa.nuxtjs.org/
   pwa: {
     icon: {
-      source: '/logo.png',
+      source: '/icon.jpg',
     },
     manifest: {
       name: 'SNISNI',

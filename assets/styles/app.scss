@@ -4,6 +4,8 @@
 
 @import "bulma";
 
+$glass-colors: $colors !default;
+
 strong {
     color: inherit;
 }
@@ -31,6 +33,10 @@ a[href]{
     }
 }
 
+.content {
+    padding: 20px;
+}
+
 .is-rounded {
     border-radius: $radius-large;
 }
@@ -41,5 +47,19 @@ a[href]{
 
 .is-glass {
     background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(15px);
+
+    backdrop-filter: blur(10px);
+
+    // Colors
+    @each $name, $pair in $glass-colors {
+        $color: nth($pair, 1);
+
+        $color-background: rgba(lighten($color, 30%), .20);
+
+        &.is-#{$name} {
+            background-color: $color-background;
+            color: $color;
+        }
+  }
+    
 }
