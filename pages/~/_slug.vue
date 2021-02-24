@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <div class="py-6 container content">
+    <div class="py-6 container article">
       <nuxt-content :document="doc" />
     </div>
   </div>
