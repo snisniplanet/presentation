@@ -1,17 +1,17 @@
 // RGB Colors
 $identity-colors: (
-    "primary": (174, 0, 255),
+    "primary": (254, 130, 0),
     "success": (23, 201, 100),
     "danger": (242, 19, 93),
-    "warn": (254, 130, 0),
-    "dark": (36, 33, 69),
+    "warn": (254, 216, 0),
+    "dark": (17, 17, 20),
 );
 
-$primary: rgb(174, 0, 255);
+$primary: rgb(254, 130, 0);
 $success: rgb(23, 201, 100);
-$warning: rgb(254, 130, 0);
+$warning: rgb(254, 216, 0);
 $danger: rgb(242, 19, 93);
-$dark: rgb(36, 33, 69);
+$dark: rgb(17, 17, 20);
 $link: rgb(0, 140, 255);
 $info: rgb(0, 81, 255);
 
